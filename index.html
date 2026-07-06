@@ -55,6 +55,41 @@
 </header>
 
 <main>
+	<!-- HERO SLIDER SECTION -->
+	<section class="hero-section" id="hero">
+		<div class="hero-slider" id="heroSlider">
+			<!-- Slide 1 -->
+			<div class="hero-slide" style="background-image: url('./img/books-header.png')">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<h1 class="hero-title">Immerse Yourself in Magic</h1>
+					<p class="hero-subtitle">Discover enchanting worlds where immortals battle fate and love transcends time</p>
+					<a href="#books" class="hero-btn">Explore Books</a>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="hero-slide" style="background-image: url('./img/book-header.png')">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<h1 class="hero-title">Join the Journey</h1>
+					<p class="hero-subtitle">Connect with Anna Hawke and stay updated on new releases and exclusive content</p>
+					<a href="#contact" class="hero-btn">Subscribe Now</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation Controls -->
+		<button class="hero-arrow hero-prev" onclick="moveSlider(-1)" aria-label="Previous slide">&#10094;</button>
+		<button class="hero-arrow hero-next" onclick="moveSlider(1)" aria-label="Next slide">&#10095;</button>
+
+		<!-- Dots Navigation -->
+		<div class="hero-dots">
+			<button class="hero-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
+			<button class="hero-dot" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
+		</div>
+	</section>
+	
 	<section class="book-series-section" id="book-series">
 	  <div class="book-series-container">
 		<h2 class="book-series-title">Bookshelf</h2>
@@ -190,7 +225,7 @@
 			<a href="#"><img src="./img/echoes-of-olympus/stricken.jpg" class="height-475" alt="book three cover" class="height-475"></a>
 			<h3 class="text-center">Coming Soon</h3>
 			<p>a short description about the third book in the series.</p>
-			<a href="#" class="series-btn">learn more</a>
+			<a href="#" class="series-btn">Learn more</a>
 		  </div>
 
 		</div>
@@ -332,6 +367,41 @@
 
 </main>
 <script>
+/* HERO SLIDER FUNCTIONALITY */
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const totalSlides = slides.length;
+
+function showSlide(n) {
+	slides.forEach(slide => slide.classList.remove('active'));
+	document.querySelectorAll('.hero-dot').forEach(dot => dot.classList.remove('active'));
+	
+	if (n >= totalSlides) currentSlide = 0;
+	if (n < 0) currentSlide = totalSlides - 1;
+	
+	slides[currentSlide].classList.add('active');
+	document.querySelector(`.hero-dot:nth-child(${currentSlide + 1})`).classList.add('active');
+}
+
+function moveSlider(n) {
+	currentSlide += n;
+	showSlide(currentSlide);
+}
+
+function goToSlide(n) {
+	currentSlide = n;
+	showSlide(currentSlide);
+}
+
+// Auto-advance slides every 6 seconds
+setInterval(() => {
+	moveSlider(1);
+}, 6000);
+
+// Initialize
+showSlide(currentSlide);
+
+
 /* Basic open/close with focus management and Escape handling */
 const menu = document.getElementById('mobile-menu');
 const backdrop = document.getElementById('menu-backdrop');
