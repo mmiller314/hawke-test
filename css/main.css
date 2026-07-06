@@ -109,6 +109,57 @@ html,body {
 	transform: scale(1.1);
 }
 
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Toggle link */
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+/* Hidden menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-width: 225px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Menu links */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #f2f2f2;
+}
+
+/* Show menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* MOBILE NAV DROPDOWN — INLINE LIST */
+.mobile-submenu {
+  display: none;
+}
+
+.mobile-submenu.open {
+	display: block;
+}
+
 /* Ensure hidden attribute hides the element */
 [hidden]{display:none !important}
 
