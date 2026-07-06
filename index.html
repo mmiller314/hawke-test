@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anna Hawke — Books & Stories</title>
+<meta name="description" content="Official site of Author Name. Books, blog, events, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link href="css/main.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-grid">
+    <nav class="nav nav-right mr-15" aria-label="Primary left navigation">
+      <a href="#books">Books</a>
+      <a href="#events">Events</a>
+    </nav>
+
+    <div class="brand" aria-label="Author name or logo">
+      <a href="index.html" class="brand-link">Anna Hawke</a>
+    </div>
+
+    <nav class="nav nav-left ml-15" aria-label="Primary right navigation">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" onclick="openMobileMenu()">
+      ☰
+    </button>
+  </div>
+
+  <!-- Backdrop and mobile menu (full height, leaves a gap on the right) -->
+  <div id="menu-backdrop" class="menu-backdrop" hidden onclick="closeMobileMenu()" aria-hidden="true"></div>
+
+  <aside id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" hidden>
+    <div class="mobile-menu-inner" role="document">
+      <header class="mobile-menu-header">
+        <h2 id="mobile-menu-title" class="mobile-title">Anna Hawke</h2>
+        <button class="mobile-close" aria-label="Close menu" onclick="closeMobileMenu()">✕</button>
+      </header>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="books.html" onclick="closeMobileMenu()">Books</a>
+        <a href="events.html" onclick="closeMobileMenu()">Events</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+      </nav>
+
+      <div class="mobile-cta">
+        <a class="btn-primary" href="#newsletter" onclick="closeMobileMenu()">Subscribe</a>
+      </div>
+    </div>
+  </aside>
+</header>
+
+<main>
+	<!-- <div class="swiper"> -->
+	  <!-- <div class="swiper-wrapper"> -->
+		<!-- <div class="swiper-slide"> -->
+          <!-- <div class="super-flow-image"> -->
+            <!-- <picture> -->
+              <!-- <source media="(max-width: 768px)" srcset="./img/2-mobile.jpg"> -->
+              <!-- <img src="./img/1.jpg" alt="" class="img"> -->
+            <!-- </picture> -->
+          <!-- </div> -->
+		<!-- </div> -->
+	  <!-- <div class="swiper-pagination"></div> -->
+
+	  <!-- <div class="swiper-button-prev"></div> -->
+	  <!-- <div class="swiper-button-next"></div> -->
+	<!-- </div> -->
+	<!-- <div class="carousel" id="heroCarousel"> -->
+	  <!-- <div class="carousel-track"> -->
+
+		<!-- <div class="carousel-slide" style="--bg:url('img1.jpg')"> -->
+		  <!-- <div class="carousel-content"> -->
+			<!-- <h2>Discover New Worlds</h2> -->
+			<!-- <p>Stories that stay with you long after the last page.</p> -->
+		  <!-- </div> -->
+		<!-- </div> -->
+
+		<!-- <div class="carousel-slide" style="--bg:url('img2.jpg')"> -->
+		  <!-- <div class="carousel-content"> -->
+			<!-- <h2>Meet Unforgettable Characters</h2> -->
+			<!-- <p>Every chapter brings someone new to life.</p> -->
+		  <!-- </div> -->
+		<!-- </div> -->
+
+		<!-- <div class="carousel-slide" style="--bg:url('img3.jpg')"> -->
+		  <!-- <div class="carousel-content"> -->
+			<!-- <h2>Your Next Favorite Book</h2> -->
+			<!-- <p>Explore my latest releases and upcoming titles.</p> -->
+		  <!-- </div> -->
+		<!-- </div> -->
+
+	  <!-- </div> -->
+
+	  <!-- <button class="carousel-btn prev">‹</button> -->
+	  <!-- <button class="carousel-btn next">›</button> -->
+
+	  <!-- <div class="carousel-dots"></div> -->
+	<!-- </div> -->
+	
+	<section class="book-series-section" id="book-series">
+	  <div class="book-series-container">
+		<h2 class="book-series-title">Bookshelf</h2>
+		<p class="book-series-subtitle">In a world where Vampires, Elementals, Raeths, and Werewolves live under the veil of secrecy, discover the immortals who burn brightly and yearn to possess the mate that fate has promised them.</p>
+      </div>
+	  <div class="book-series-cover-container">
+	    <div class="book-series-cover-mb">
+          <a href="https://www.amazon.com/dp/B0BXY9Y4CY" target="_blank">
+		    <img src="./img/1.jpg" class="centered-image" style="max-height:375px" />
+		  </a>
+		</div>
+	    <div class="book-series-cover-mb">
+          <a href="https://www.amazon.com/The-Lost-Sovereign/dp/B0DWNHPSFV" target="_blank">
+		    <img src="./img/2.jpg" class="centered-image" style="max-height:375px" />
+		  </a>
+		</div>
+	    <div class="book-series-cover-mb">
+          <a href="https://www.amazon.com/gp/product/B0FYH22JQY" target="_blank">
+		    <img src="./img/3.jpg" class="centered-image" style="max-height:375px" />
+		  </a>
+		</div>
+	    <div class="book-series-cover-mb">
+          <a href="https://www.amazon.com/Echoes-of-Olympus/dp/B0GFPWMWHV" target="_blank">
+		    <img src="./img/4.jpg" class="centered-image" style="max-height:375px" />
+		  </a>
+		</div>
+	    <div  class="book-series-cover-mb">
+          <a href="https://www.amazon.com/Echoes-of-Olympus/dp/B0GFPWMWHV" target="_blank">
+		    <img src="./img/5.jpg" class="centered-image" style="max-height:375px" />
+		  </a>
+		</div>
+
+	  </div>
+	</section>
+	
+	<section class="series-section" id="books">
+	  <div class="series-container">
+
+		<h2 class="series-title">Immortal Accords Series</h2>
+		<p class="series-subtitle">In a world where Vampires, Elementals, Raeths, and Werewolves live under the veil of secrecy, discover the immortals who burn brightly and yearn to possess the mate that fate has promised them.</p>
+
+		<div class="series-grid">
+
+		  <!-- Book 1 -->
+		  <div class="series-card">
+			<a href="https://www.amazon.com/gp/product/B0BX8BPV2M?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks&qid=1777505339&sr=8-4" target="_blank">
+			  <img src="./img/cover-1.jpg" alt="Book One Cover">
+			</a>
+			<h3 class="text-center">Beneath Fated Bonds</h3>
+			<p>A short description about the first book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		  <!-- Book 2 -->
+		  <div class="series-card">
+			<a href="#"><img src="./img/cover-2.jpg" alt="Book Two Cover"></a>
+			<h3 class="text-center">Against Immortal Sins</h3>
+			<p>A short description about the second book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		  <!-- Book 3 -->
+		  <div class="series-card">
+			<a href="#"><img src="./img/cover-3.jpg" alt="Book Three Cover"></a>
+			<h3 class="text-center">Within Immortal Beasts</h3>
+			<p>A short description about the third book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		</div>
+
+	  </div>
+      <div class="series-container">
+		<h2 class="series-title">The Lost Sovereign </h2>
+		<p class="series-subtitle">Four hundred years have passed since the Sagani monarchs were murdered and their daughter vanished. With an escalating number of immortals becoming rogue or disappearing entirely, their secretive civilization is on the brink of collapse. A group of immortals, still loyal to the throne, must unite the dystopian society.</p>
+		
+		<div class="series-grid">
+
+		  <!-- Book 1 -->
+		  <div class="series-card">
+			<a href="https://www.amazon.com/dp/B0DWNHPSFV" target="_blank">
+			  <img src="./img/lost-sovereign/shattered.jpg" class="height-475" alt="Book One Cover">
+			</a>
+			<h3 class="text-center">Shattered<br/>The Lost Sovereigns<br>Book One</h3>
+			<p>A short description about the first book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		  <!-- Book 2 -->
+		  <div class="series-card">
+			<a href="#"><img src="./img/lost-sovereign/suffered.jpg" alt="Book Two Cover" class="height-475"></a>
+			<h3 class="text-center">Shuttered<br/>The Lost Sovereigns<br>Book Two</h3>
+			<p>A short description about the second book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		  <!-- Book 3 -->
+		  <div class="series-card">
+			<a href="#"><img src="./img/lost-sovereign/scarred.jpg" alt="Book Three Cover" class="height-475"></a>
+			<h3 class="text-center">Scarred<br/>The Lost Sovereigns<br>Book Two</h3>
+			<p>A short description about the third book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		</div>
+      </div>
+      <div class="series-container">
+		<h2 class="series-title">Echoes of Olympus</h2>
+		<p class="series-subtitle">For years, Thalassa lived alone in a cave, cursed with a gaze that turns anyone who meets her eyes to stone. She hides from the world with only statues and silence for company until a wounded stranger stumbles into her darkness.</p>
+		
+		<div class="series-grid">
+
+		  <!-- Book 1 -->
+		  <div class="series-card">
+			<a href="https://www.amazon.com/dp/B0DWNHPSFV" target="_blank">
+			  <img src="./img/echoes-of-olympus/sunshine.jpg" class="height-475" alt="Book One Cover">
+			</a>
+			<h3 class="text-center">Sunshine & Sin</h3>
+			<p>A short description about the first book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		  <!-- Book 2 -->
+		  <div class="series-card">
+			<a href="#"><img src="./img/echoes-of-olympus/roses.jpg" class="height-475" alt="Book Two Cover" class="height-475"></a>
+			<h3 class="text-center">Roses & Rage</h3>
+			<p>A short description about the second book in the series.</p>
+			<a href="#" class="series-btn">Learn More</a>
+		  </div>
+
+		  <!-- Book 3 -->
+		  <div class="series-card">
+			<a href="#"><img src="./img/echoes-of-olympus/stricken.jpg" class="height-475" alt="book three cover" class="height-475"></a>
+			<h3 class="text-center">Coming Soon</h3>
+			<p>a short description about the third book in the series.</p>
+			<a href="#" class="series-btn">learn more</a>
+		  </div>
+
+		</div>
+      </div>
+	</section>
+	
+
+	<section style="margin:80px 0;padding:80px 20px;background-color:#000000">
+<div class="series-container" style="color:#ffffff" id="events">
+		<h2 class="series-title">Upcoming Events</h2>
+		<p class="series-subtitle" style="color:#ffffff">For years, Thalassa lived alone in a cave, cursed with a gaze that turns anyone who meets her eyes to stone. She hides from the world with only statues and silence for company until a wounded stranger stumbles into her darkness.</p>
+
+		</div>
+
+	<div class="events-grid">
+
+		<div class="event-card">
+			<img class="event-image" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Book Signing">
+			<div class="event-content">
+				<div class="event-date">June 12, 2026</div>
+				<div class="event-title">Book Signing: *Shadows of the Vale*</div>
+				<div class="event-location">Barnes & Noble – Chicago, IL</div>
+				<div class="event-description">
+					Meet the author, get your book signed, and enjoy a short Q&A session.
+				</div>
+			</div>
+		</div>
+
+		<div class="event-card">
+			<img class="event-image" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Online Talk">
+			<div class="event-content">
+				<div class="event-date">July 3, 2026</div>
+				<div class="event-title">Author Talk: Crafting Worlds</div>
+				<div class="event-location">Online – Zoom Webinar</div>
+				<div class="event-description">
+					A deep dive into world‑building techniques and storytelling structure.
+				</div>
+			</div>
+		</div>
+
+		<div class="event-card">
+			<img class="event-image" src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" alt="Festival Panel">
+			<div class="event-content">
+				<div class="event-date">August 18, 2026</div>
+				<div class="event-title">Literary Festival Panel</div>
+				<div class="event-location">Portland Book Fest – Portland, OR</div>
+				<div class="event-description">
+					Join a panel of authors discussing the future of speculative fiction.
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</section>
+
+	
+	<section class="about-section" id="about">
+	  <div class="about-container">
+
+		<div class="about-image">
+		  <img src="img/about-me.jpg" alt="Author portrait">
+		</div>
+
+		<div class="about-text">
+		  <h2>About the Author</h2>
+		  <p>
+			I’m an author who loves crafting immersive worlds, layered characters, 
+			and stories that linger long after the final chapter. My work blends 
+			emotional depth with a sense of adventure, drawing inspiration from 
+			everyday moments, forgotten histories, and the quiet magic of human connection.
+		  </p>
+
+		  <p style="margin-bottom:55px">
+			When I’m not writing, you’ll find me exploring new places, reading 
+			anything I can get my hands on, or sketching ideas for my next novel. 
+			Thank you for joining me on this creative journey — I’m thrilled to share my stories with you.
+		  </p>
+
+		  <a href="https://www.amazon.com/stores/Anna-Hawke/author/B0BXFNK5PC?ref=ap_rdr&shoppingPortalEnabled=true&ccs_id=b38258ce-45c3-4eba-85a1-3134aa13e68b" target="_blank" class="about-btn">Explore My Books</a>
+		</div>
+
+	  </div>
+	</section>
+	
+	<section class="connect-section" id="contact">
+	  <div class="connect-container">
+
+		<h2 class="connect-title">Join my Newsletter</h2>
+		<p class="connect-subtitle">
+		  Get updates on new releases, events, and behind‑the‑scenes notes.
+		</p>
+		
+		<div style="max-width:500px;margin:0 auto">
+			<form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!')">
+			  <input type="email" placeholder="Your email" required>
+			  <button type="submit">Subscribe</button>
+			</form>
+		</div>
+	  </div>
+	</section>
+
+
+	
+	<footer class="site-footer">
+	  <div class="footer-container">
+
+		<div class="footer-brand">
+		  <h3>Anna Hawke</h3>
+		  <p>Stories that stay with you.</p>
+		</div>
+
+		<div class="footer-links">
+		  <a href="#about">About</a>
+		  <a href="#books">Books</a>
+		  <a href="#connect">Connect</a>
+		  <a href="#contact">Contact</a>
+		</div>
+
+		<!-- Social icons moved here -->
+		<div class="footer-social">
+		  <a href="https://instagram.com/yourhandle" target="_blank">
+			<img src="img/contact/facebook.png" style="height:40px" />
+		  </a>
+
+		  <a href="https://facebook.com/yourhandle" target="_blank">
+			<img src="img/contact/instagram.png" style="height:40px" />
+		  </a>
+		</div>
+
+		<div class="footer-copy">
+		  © <span id="year"></span> Anna Hawke — All Rights Reserved
+		</div>
+
+	  </div>
+	</footer>
+
+
+
+</main>
+<script>
+/* Basic open/close with focus management and Escape handling */
+const menu = document.getElementById('mobile-menu');
+const backdrop = document.getElementById('menu-backdrop');
+const toggleBtn = document.querySelector('.menu-toggle');
+let lastFocused = null;
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  speed: 600,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+ //autoplay: {
+ //  delay: 5000,
+ //},
+
+  // Navigation arrows
+  navigation: {
+
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+function openMobileMenu(){
+  lastFocused = document.activeElement;
+  menu.removeAttribute('hidden');
+  backdrop.removeAttribute('hidden');
+  // small delay to allow CSS transitions
+  requestAnimationFrame(()=> {
+    menu.classList.add('show');
+    backdrop.classList.add('show');
+  });
+  toggleBtn.setAttribute('aria-expanded','true');
+  // focus first link
+  const firstLink = menu.querySelector('.mobile-nav a');
+  if(firstLink) firstLink.focus();
+  document.addEventListener('keydown', handleKeyDown);
+  // prevent body scroll while menu open
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu(){
+  menu.classList.remove('show');
+  backdrop.classList.remove('show');
+  toggleBtn.setAttribute('aria-expanded','false');
+  document.removeEventListener('keydown', handleKeyDown);
+  document.body.style.overflow = '';
+  // wait for transition then hide attributes
+  setTimeout(()=> {
+    menu.setAttribute('hidden','');
+    backdrop.setAttribute('hidden','');
+    if(lastFocused) lastFocused.focus();
+  }, 200);
+}
+
+function handleKeyDown(e){
+  if(e.key === 'Escape') closeMobileMenu();
+  // simple focus trap: keep Tab inside menu
+  if(e.key === 'Tab'){
+    const focusable = Array.from(menu.querySelectorAll('a,button')).filter(el => !el.hasAttribute('disabled'));
+    if(focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+}
+
+/* Close if user resizes to desktop (optional) */
+window.addEventListener('resize', ()=> {
+  if(window.innerWidth > 880 && !menu.hasAttribute('hidden')){
+    closeMobileMenu();
+  }
+});
+</script>
+<script type="text/javascript">document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
