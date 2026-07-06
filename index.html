@@ -47,8 +47,8 @@
       </header>
 
       <nav class="mobile-nav" aria-label="Mobile navigation">
-        <a href="books.html" onclick="closeMobileMenu()">Books</a>
-        <a href="events.html" onclick="closeMobileMenu()">Events</a>
+        <a href="#books" onclick="closeMobileMenu()">Books</a>
+        <a href="#events" onclick="closeMobileMenu()">Events</a>
         <a href="#about" onclick="closeMobileMenu()">About</a>
         <a href="#contact" onclick="closeMobileMenu()">Contact</a>
       </nav>
@@ -445,7 +445,7 @@ function closeMobileMenu(){
   setTimeout(()=> {
     menu.setAttribute('hidden','');
     backdrop.setAttribute('hidden','');
-    if(lastFocused) lastFocused.focus();
+    //if(lastFocused) lastFocused.focus();
   }, 200);
 }
 
