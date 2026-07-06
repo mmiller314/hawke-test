@@ -16,7 +16,17 @@
 <header class="site-header">
   <div class="container header-grid">
     <nav class="nav nav-right mr-15" aria-label="Primary left navigation">
-      <a href="#books">Books</a>
+	  <div class="dropdown">
+		<a href="#books" onclick="toggleDropdown(event)">Books ▾</a>
+
+		<div class="dropdown-menu">
+		  <a href="#series1">The Immortal Accords</a>
+		  <a href="#series2">The Lost Sovereign</a>
+		  <a href="#series3">Beyond The Shadows</a>
+		  <a href="#series4">Echoes of Olympus</a>
+		</div>
+
+	  </div>
       <a href="#events">Events</a>
     </nav>
 
@@ -45,7 +55,14 @@
       </header>
 
       <nav class="mobile-nav" aria-label="Mobile navigation">
-        <a href="#books" onclick="closeMobileMenu()">Books</a>
+        <a href="#books" onclick="toggleMobileDropdown(event)">Books</a>
+		<div class="mobile-submenu" style="margin-left:10px">
+		  <a href="#series1" style="display:block">The Immortal Accords</a>
+		  <a href="#series2" style="display:block">The Lost Sovereign</a>
+		  <a href="#series3" style="display:block">Beyond The Shadows</a>
+		  <a href="#series4" style="display:block">Echoes of Olympus</a>
+		</div>
+		  
         <a href="#events" onclick="closeMobileMenu()">Events</a>
         <a href="#about" onclick="closeMobileMenu()">About</a>
         <a href="#contact" onclick="closeMobileMenu()">Contact</a>
@@ -111,11 +128,6 @@
 	    <div class="book-series-cover-mb">
           <a href="https://www.amazon.com/gp/product/B0FYH22JQY" target="_blank">
 		    <img src="./img/3.jpg" class="centered-image" style="max-height:375px" />
-		  </a>
-		</div>
-	    <div class="book-series-cover-mb">
-          <a href="https://www.amazon.com/Echoes-of-Olympus/dp/B0GFPWMWHV" target="_blank">
-		    <img src="./img/4.jpg" class="centered-image" style="max-height:375px" />
 		  </a>
 		</div>
 	    <div  class="book-series-cover-mb">
@@ -400,6 +412,33 @@ setInterval(() => {
 
 // Initialize
 showSlide(currentSlide);
+
+
+/* dropdown menu */
+function toggleDropdown(e) {
+  // Prevent the Books link from navigating immediately
+  e.preventDefault();
+
+  const menu = e.target.nextElementSibling;
+
+  // Toggle visibility
+  menu.classList.toggle("open");
+}
+
+function toggleMobileDropdown(e) {
+  e.preventDefault();
+
+  const menu = e.target.nextElementSibling;
+
+  // Close other open lists (optional)
+  document.querySelectorAll('.mobile-nav .dropdown-menu.open')
+    .forEach(m => {
+      if (m !== menu) m.classList.remove('open');
+    });
+
+  // Toggle this one
+  menu.classList.toggle('open');
+}
 
 
 /* Basic open/close with focus management and Escape handling */
