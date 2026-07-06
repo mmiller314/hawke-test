@@ -10,9 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 <link href="css/main.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -390,32 +388,6 @@ const menu = document.getElementById('mobile-menu');
 const backdrop = document.getElementById('menu-backdrop');
 const toggleBtn = document.querySelector('.menu-toggle');
 let lastFocused = null;
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  speed: 600,
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  
- //autoplay: {
- //  delay: 5000,
- //},
-
-  // Navigation arrows
-  navigation: {
-
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 
 function openMobileMenu(){
   lastFocused = document.activeElement;
