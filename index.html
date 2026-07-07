@@ -14,7 +14,7 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="container header-grid">
+  <div class="container header-grid" style="padding:18px 18px 6px 18px">
     <nav class="nav nav-right mr-15" aria-label="Primary left navigation">
 	  <div class="dropdown">
 		<a href="#books" onclick="toggleDropdown(event)">Books ▾</a>
@@ -31,7 +31,9 @@
     </nav>
 
     <div class="brand" aria-label="Author name or logo">
-      <a href="index.html" class="brand-link">Anna Hawke</a>
+      <a href="index.html" class="brand-link">
+		<img src="./img/logo-name.png" style="max-height:75px" />
+	  </a>
     </div>
 
     <nav class="nav nav-left ml-15" aria-label="Primary right navigation">
@@ -50,7 +52,7 @@
   <aside id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" hidden>
     <div class="mobile-menu-inner" role="document">
       <header class="mobile-menu-header">
-        <h2 id="mobile-menu-title" class="mobile-title">Anna Hawke</h2>
+        <img src="./img/transparent-logo-no-text.png" style="max-height:100px" />
         <button class="mobile-close" aria-label="Close menu" onclick="closeMobileMenu()">✕</button>
       </header>
 
@@ -346,7 +348,7 @@
 	  <div class="footer-container">
 
 		<div class="footer-brand">
-		  <h3>Anna Hawke</h3>
+		  <img src="./img/transparent-logo.png" style="max-height:150px" />
 		  <p>Swoony Stories With Bite</p>
 		</div>
 
